@@ -1,3 +1,58 @@
 <body>
   <h1><center><b>Block of Code</b></center></h1>
+
+print("Welcome to Simple Calculator!")
+print("Please choose from the options below.")
+
+print(" 1. Multiplication ")
+print(" 2. Division ")
+print(" 3. Addition ")
+print(" 4. Subtraction ")
+
+def Multiplication(x,y):
+    return x * y
+
+def Division(x,y):
+    return x / y
+
+def Addition(x,y):
+    return x + y
+
+def Subtraction(x,y):
+    return x -y
+
+
+while True:
+    user_input = input("Choose what type of calculation you would like to perform: (1/2/3/4) ")
+
+    if user_input in ("1","2","3","4"):
+        number1 = float(input("Enter the first number here: "))
+        number2 = float(input("Enter the second number here: "))
+
+        if user_input == "1":
+            print(number1, "*", number2, "=", Multiplication(number1,number2))
+
+        elif user_input == "2":
+            print(number1, "/", number2, "=", Division(number1,number2))
+
+        elif user_input == "3":
+            print(number1, "+", number2, "=", Addition(number1,number2))
+
+        elif user_input == "4":
+            print(number1, "-", number2, "=", Subtraction(number1,number2))
+
+        another_calculation = input("Would you like to perform another calculation? (y/n): ")
+        if another_calculation == "n":
+            break
+    else:
+        print("Only numbers are allowed. Please try again.")
+
+  
+                        
+        
+
+
+
+
+
 </body>
